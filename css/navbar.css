@@ -1,20 +1,27 @@
 /*All this is navbar stuff, dont really change anything unless you know what you are doing*/
-#navbarlink {
-  font-family: 'Titillium Web', sans-serif;
+/*#navbarlogo{
+  display: inline;
+  height: 50%;
+  width: 110%;
+  padding: 0;
 }
 
-.posfixed{
-    position: fixed;
-    top: 0;
+#navbarlinklogo{
+  padding: 2px;
+  width: 9%;
+  height: 20%;
+}*/
+
+#navbarlink {
+  font-family: 'Quicksand', sans-serif;
 }
-.nav {
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #2457af;
-    font-family: 'Titillium Web', sans-serif;
-    border-radius: 5px;
+    background-color: #000080;
 }
 
 li {
@@ -23,24 +30,28 @@ li {
 
 li a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: #ffff00;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
+
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #3e75a2;
+    background-color: black;
 }
+
 li.dropdown {
     display: inline-block;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #2457af;
+    background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -48,13 +59,9 @@ li.dropdown {
     display: block;
     text-align: left;
 }
-.dropdown-content a:hover {
-  background-color: #3e75a2
-}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.active {
-   background-color: #009933;
 }
