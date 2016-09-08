@@ -11,7 +11,7 @@
   <!-- General Styles -->
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <!-- Font Control -->
-  <link rel="stylesheet" type="text/css" href="css/fontcontrol.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <!-- Header Font, Quicksand -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!-- font-family: 'Quicksand', sans-serif; -->
@@ -24,22 +24,36 @@
 <nav>
   <ul class="nav">
     <li id="navbarlink"><a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i><br/>Home</a></li>
-    <li id="navbarlink"><a href="journal/entries/index.html"><i class="fa fa-book fa-2x" aria-hidden="true"></i><br/>Journal</a></li>
-    <li id="navbarlink"><a class="active" href="about.html"><i class="fa fa-user-secret fa-2x" aria-hidden="true"></i><br/>About us</li>
+    <li class="dropdown" id="navbarlink">
+      <a class="dropbtn" href="journal/entries/index.html"><i class="fa fa-book fa-2x" aria-hidden="true"></i><br/>Journal</a>
+        <div class="dropdown-content">
+          <a href="#">Entry 1</a>
+          <!-- <a href="#">Entry 2</a>
+          <a href="#">Entry 3</a>
+          <a href="#">Entry 4</a> uncomment later (as they come)
+          <a href="#">Entry 5</a> -->
+          <a href="#"><i class="fa fa-database" aria-hidden="true"></i> View All Entries</a>
+        </div>
+      </li>
+    <li id="navbarlink"><a class="active" href="about.html"><i class="fa fa-user-secret fa-2x" aria-hidden="true"></i><br/>About us</a></li>
   </ul>
-  <!-- Navbar setup: 10 most recent journal entries in dropdown of journal, click on journal to journal/entries/index.html -->
+  <!-- Navbar setup: 5 most recent journal entries in dropdown of journal, click on journal to journal/entries/index.html -->
 </nav>
 <body>
-  <h1>About our team:</h1>
-  <p>Team 5159 is an FTC team entering the 2016-17 season under Punahou School in Hawaii. This site mainly serves as our journal, a reqirement for the season.</p>
+  <h1 class="head">About our team:</h1>
+  <p class="body">Team 5159 is an FTC team entering the 2016-17 season under Punahou School in Hawaii. This site mainly serves as our journal, a reqirement for the season.</p>
   <br/>
-  <h2>Team members:</h2>
-  <h4>Devin Chotzen-Hartzell - <a href="https://github.com/dchotzen-hartzell" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i>GitHub</a></h4>
-    <p>Bio Here...</p>
+  <h2 class="head">Team members:</h2>
+  <h4 class="head" id="bioimgtest"><img src="assets/images/logo.png"> Devin Chotzen-Hartzell - <a href="https://github.com/dchotzen-hartzell" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i>GitHub</a></h4>
+    <p class="body">Bio Here...</p>
   <br/>
-  <h4>Diego Eann - <a href="https://github.com/808dkaneohe" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i>GitHub</a></h4>
-    <p>Bio here...</p>
+  <h4 class="head">Diego Eann - <a href="https://github.com/808dkaneohe" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i>GitHub</a></h4>
+    <p class="body">Bio here...</p>
 </body>
 <footer>
-
+  <br/>
+  <br/>
+  <br/>
+  <p class="body"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br /><i class="fa fa-shield" aria-hidden="true"></i> The source code of this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>, however all third-party content is under their respective licenses. See licence.txt for more details.</a></p>
+  <p class="body">Hosting powered by <a href="https://pages.github.com"><i class="fa fa-github" aria-hidden="true"></i> GitHub Pages</a></p>
 </footer>
